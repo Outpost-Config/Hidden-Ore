@@ -266,6 +266,25 @@ blocks:
     chance: 0.00146
     minAmount: 1
     maxAmount: 9
+    Uranium:
+   package:
+    - ==: org.bukkit.inventory.ItemStack
+      type: ink_sack
+      durrability: 4
+      amount: 1
+      meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: 'Uranium'
+          lore:
+           - "Uranium"
+   tools:
+    - diamond_pickaxe
+   minY: 1
+   maxY: 21
+   chance: 0.1
+   minAmount: 1
+   maxAmount: 5
     # Biomes can modify the chance rate. Anything specified in biome _replaces_ the base chance or min/max amounts,
     #  unlike tools which modify those values after biome is resolved.
     biomes:
@@ -365,4 +384,4 @@ pretty_names:
  NETHERRACK: Netherrack
  # if the base type has subtypes, just specify those subtypes as a list. If you specify one, you'll need to specify all used subtypes.
  INK_SACK:
-  4: Lapis Lazuli
+  4: Uranium
